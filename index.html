@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+
+    <title>File Browser by Bykov</title>
+</head>
+<body>
+    <h1>File Browser </i></h1>
+    
+    <div class="container">
+        <navbar>
+            <ul class="menu">
+                <li id="createFolderLi">Создать папку</li>
+                <li id="deleteFolderLi">Удалить папку</li>
+                <li id="loadFileLi">Загрузить файл</li>
+                <li>Скачать файл</li>
+                <li id="deleteFileLi">Удалить файл</li>
+                <li id="renameLi">Переименовать</li>
+            </ul>
+        </navbar>
+        <div class="row">
+            <div class="folder" data-level="0" data-name="root" id="fileBrowser">
+                <div class="folder_name unselect" id="rootName"></div>
+                <div class="folder_sub folder_container">
+                    <!--div class="folder " id="rootFolder" data-level="1" data-name="Папка проекта">
+                        <div class="folder_name unselect">
+                            <i class="fa-solid fa-folder-closed folder_expand"></i> 
+                            Папка проекта
+                        </div>
+                        <div class="folder_sub folder_content_hide"></div>
+                    </div>
+                    <div class="folder " id="rootFolder" data-level="1" data-name="Папка 2">
+                        <div class="folder_name unselect">
+                            <i class="fa-solid fa-folder-closed folder_expand"></i>
+                            Папка 2
+                        </div>
+                        <div class="folder_sub folder_content_hide"></div>
+                    </div -->
+                </div>
+            </div>
+            
+            <div id="filePanel" class="filePanel">
+                <div class="fileHeaderList" id="fileHeaderList">
+                    <div class="fileHeaderHidden">&nbsp;</div>
+                </div>
+                <div class="fileContent" id="fileContent" style="margin-left:25px">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

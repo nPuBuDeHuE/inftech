@@ -1,0 +1,161 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* установим отступ 1rem от нижнего края элемента */
+.text-field {
+    margin-bottom: 1rem;
+}
+/* стили для label */
+.text-field__label {
+    display: block;
+    margin-bottom: 0.25rem;
+    color:#fff;
+}
+/* стили для input */
+.text-field__input {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* стили для textarea */
+.text-field__textarea {
+    display: block;
+    width: 100%;
+    height: calc(3*2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text-field__button {
+    _display: inline-block;
+    width: 49%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.primary{
+    background-color: cornflowerblue;
+}
+
+
+ul.menu {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    _width: 200px;
+    background-color: #f1f1f1;
+}
+
+ul.menu > li {
+    _display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    display:inline;
+}
+
+/* Change the link color on hover */
+ul.menu > li:hover {
+    background-color: #555;
+    color: white;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;  
+}
+#fileHeaderList{
+    display:grid;
+    grid-template-columns: 10px repeat(5,1fr);
+    border-bottom: 2px solid blue;;
+    _height:16px;
+}
+.fileHeader{
+    display:grid;
+    padding: 8px 16px;
+    border: 1px solid blue;
+    margin-bottom: -1px;
+}
+.fileHeaderHidden{
+    display:grid;
+    padding: 8px 16px;
+}
+
+
+.folder_name, .file_name{
+    margin: 0;
+    padding: 8px 16px;
+    _width: 200px;
+    _background-color: #f1f1f1;
+}
+
+
+.selectedElem{
+    background-color: #555;
+    color:#fff;
+}
+.folder_content_hide{
+    display:none;
+}
+.folder_content_show{
+    display:block; 
+    color:#000;
+    _background-color: #f1f1f1;
+}
+
+.modalWindow{
+    _display:none;
+    position: fixed;
+    overflow:auto;
+    left:0px;
+    top: 0px;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border: 1px solid red;
+    z-index: index 50;
+}
+.modalContent{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width:500px;
+    _margin-left: -100px;
+    _margin-top: -75px;
+    padding: 30px 20px;
+    color:#fff;
+}
