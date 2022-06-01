@@ -47,6 +47,23 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    saveFileLi.addEventListener('click', function(){
+        let selectedFile = document.querySelectorAll('.file_name.selectedElem')[0];
+        if (selectedFile){
+            let fileName = selectedFile.querySelector('.fa-file-lines').dataset.name;
+            console.log(fileName);
+            let file = arrFiles[fileName]["file"];
+            let downLink = document.createElement('a');
+            downLink.setAttribute('href', URL.createObjectURL(file));
+            downLink.setAttribute('download', fileName);
+            downLink.style.display = 'none';
+            document.body.appendChild(downLink);
+            downLink.click();
+            document.body.removeChild(downLink);
+
+        }
+    });
+
 
     /*  Контролируем нажатие внутри fileBrowser
         Если нажата иконка папки - открываем и показываем вложения
